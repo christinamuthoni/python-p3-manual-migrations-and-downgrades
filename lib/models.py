@@ -21,9 +21,9 @@ class Student(Base):
 
     id = Column(Integer(), primary_key=True)
     name = Column(String(), index=True)
-    email = Column(String(55))
+    account = Column(String(55))
     grade = Column(Integer())
-    birthday = Column(DateTime())
+    birthyr = Column(DateTime())
     enrolled_date = Column(DateTime(), default=datetime.now())
 
     def __repr__(self):
